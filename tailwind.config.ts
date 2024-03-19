@@ -10,6 +10,10 @@ const config = {
 	],
   prefix: "",
   theme: {
+    colors: {
+      transparent: 'transparent',
+      'vendors': '#BA4920',
+    },
     container: {
       center: true,
       padding: "2rem",

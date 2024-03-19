@@ -2,6 +2,7 @@ import { Header } from '../components/header';
 import Image from 'next/image';
 import logo from '../../public/logo.svg';
 import Link from 'next/link';
+import { Participant } from './card-list';
 
 export default function Home() {
   return (
@@ -21,14 +22,22 @@ export default function Home() {
         </div>
       </div>
       <div className='container mx-auto h-screen py-6 bg-[#FFB623] text-[#982900]'>
-        <div>Explorez un festival de délices vietnamiens authentiques.</div>
+        {/* <div>Explorez un festival de délices vietnamiens authentiques.</div>
         <div>
           Ut quis velit nec laoreet et laoreet qui nunc eu dignissim. Nulla
           aptent ut vitae est aenean risus at omnis lectus. Phasellus Lorem
           Ipsum, elit urna gravida ante.
+        </div> */}
+        <div className="grid grid-cols-3 gap-2">
+          <Participant></Participant>
+          <Participant></Participant>
+          <Participant></Participant>
+          {/* <div>05</div>
+          <div>05</div> */}
         </div>
+        {/* <CardWithForm></CardWithForm> */}
       </div>
-      <div className='container mx-auto h-screen py-6'>
+      {/* <div className='container mx-auto h-screen py-6'>
         <div>Explorez un festival de délices vietnamiens authentiques.</div>
         <div>
           Ut quis velit nec laoreet et laoreet qui nunc eu dignissim. Nulla
@@ -86,7 +95,7 @@ export default function Home() {
           grand merci à eux pour leur soutien précieux!{' '}
         </div>
         <div>La Belle Tonki</div>
-      </div>
+      </div> */}
     </div>
   );
 }
