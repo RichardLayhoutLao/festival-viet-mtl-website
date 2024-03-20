@@ -14,12 +14,12 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu';
-import Restaurant from '@/svg/restaurant';
-import Performer from '@/svg/performer';
-import Merchant from '@/svg/merchant';
-import Association_Organisme from '@/svg/association-organisme';
-import Volunteer from '@/svg/volunteer';
-import Sponsor from '@/svg/sponsor';
+import Restaurant from '@/components/svg/participants/restaurant';
+import Performer from '@/components/svg/participants/performer';
+import Merchant from '@/components/svg/participants/merchant';
+import Association_Organisme from '@/components/svg/participants/association-organisme';
+import Volunteer from '@/components/svg/participants/volunteer';
+import Sponsor from '@/components/svg/participants/sponsor';
 
 const components: { title: string; href: string; description: string }[] = [
   {
@@ -137,7 +137,7 @@ const ListItem = React.forwardRef<
         <a
           ref={ref}
           className={cn(
-            'block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground',
+            'block select-none space-y-1 h-[125px] rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground',
             className
           )}
           {...props}

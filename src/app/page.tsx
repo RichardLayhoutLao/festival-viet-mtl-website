@@ -3,10 +3,10 @@ import Image from 'next/image';
 import logo from '../../public/logo.svg';
 import Link from 'next/link';
 import { Participant } from '../components/participant-card';
-import Restaurant from '@/svg/restaurant';
-import Performer from '@/svg/performer';
-import Merchant from '@/svg/merchant';
-import Association_Organisme from '@/svg/association-organisme';
+import Restaurant from '@/components/svg/participants/restaurant';
+import Performer from '@/components/svg/participants/performer';
+import Merchant from '@/components/svg/participants/merchant';
+import Association_Organisme from '@/components/svg/participants/association-organisme';
 import IndividualCard from '@/components/individual-card';
 
 const foodVendors = [
