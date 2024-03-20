@@ -7,6 +7,7 @@ import Restaurant from '@/svg/restaurant';
 import Performer from '@/svg/performer';
 import Merchant from '@/svg/merchant';
 import Association_Organisme from '@/svg/association-organisme';
+import IndividualCard from '@/components/individual-card';
 
 const foodVendors = [
   {
@@ -342,6 +343,31 @@ const donators = [
   'Alexandra Bui',
 ];
 
+const donators2 = [
+  'Sophia Le Nguyen',
+  'Michael Nguyen Tran',
+  'Alexander Bui',
+  'William Hoang Tuan',
+  'Daniel Vu Thanh',
+  'Isabella Do',
+  'Ava Ngo',
+  'Emma Dang Linh',
+  'Ethan Pham Bao',
+  'Olivia Huynh Mai',
+  'Benjamin Ly Hieu',
+  'Olivia Mai',
+  'Alexandra Bui',
+];
+
+const users = [
+  { name: "Camille", instagram: "eonnigiri" },
+  { name: "Miissa", instagram: "purplem33" },
+  { name: "Nick Huu", instagram: "nick.huu" },
+  { name: "Chanh", instagram: "_onebrushman" },
+  { name: "Richard", instagram: "ricecar_" },
+  { name: "Maximo", instagram: "minigodesign111" }
+];
+
 export default function Home() {
   return (
     <div>
@@ -613,29 +639,50 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='container mx-auto py-48 bg-[#EDEBDE] space-y-8'>
-        <div className='space-y-8'>
-          <h1 className='text-3xl font-bold text-center'>SPECIAL THANKS</h1>
+      <section className='container mx-auto py-48 bg-[#EDEBDE] space-y-16'>
+
+        <h1 className='text-3xl font-bold text-center'>SPECIAL THANKS</h1>
+        <div className="space-y-8">
           <h1 className='text-2xl font-bold text-center'>DONATORS</h1>
           <p className='text-xl text-center'>
             We express our deep gratitude to all who have generously donated to
             support our festival
           </p>
+          <div className="flex justify-center">
+            <div className="flex flex-wrap gap-2 justify-center w-[65%]">
+                {donators.map((donator) => (
+                  <IndividualCard key={donator} name={donator} />
+                ))}
+            </div>
+          </div>
         </div>
 
-        {donators.map((donator) => (
-          <h1 key={donator}>{donator}</h1>
-        ))}
-        <div className='space-y-8'>
+        <div className="space-y-8">
           <h1 className='text-2xl font-bold text-center'>CONTRIBUTORS</h1>
           <p className='text-xl text-center'>
             A heartfelt thank you to our contributors for their invaluable time
             and skills:
           </p>
+          <div className="flex justify-center">
+            <div className="flex flex-wrap gap-2 justify-center w-[65%]">
+                {donators2.map((donator) => (
+                  <IndividualCard key={donator} name={donator} />
+                ))}
+            </div>
+          </div>
+          <div className="flex justify-center">
+            <div className="flex flex-wrap gap-2 justify-center w-[50%]">
+                {users.map((donator,index) => (
+                  <IndividualCard key={index} name={donator.name}  instagram={donator.instagram}/>
+                ))}
+            </div>
+          </div>
         </div>
-        {donators.map((donator) => (
-          <h1 key={donator}>{donator}</h1>
-        ))}
+        <p className='text-xl text-center'>
+          We are also grateful to all others who played a part in making this event successful !
+        </p>
+
+        
       </section>
     </div>
   );
