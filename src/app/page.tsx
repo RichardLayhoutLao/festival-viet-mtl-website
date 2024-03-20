@@ -360,12 +360,12 @@ const donators2 = [
 ];
 
 const users = [
-  { name: "Camille", instagram: "eonnigiri" },
-  { name: "Miissa", instagram: "purplem33" },
-  { name: "Nick Huu", instagram: "nick.huu" },
-  { name: "Chanh", instagram: "_onebrushman" },
-  { name: "Richard", instagram: "ricecar_" },
-  { name: "Maximo", instagram: "minigodesign111" }
+  { name: "Camille", instagram: "eonnigiri", link:"https://www.instagram.com/eonnigiri/" },
+  { name: "Miissa", instagram: "purplem33", link:"https://www.instagram.com/purplem33/" },
+  { name: "Nick Huu", instagram: "nick.huu", link:"https://www.instagram.com/nick.huu/" },
+  { name: "Chanh", instagram: "_onebrushman", link:"https://www.instagram.com/_onebrushman/" },
+  { name: "Richard", instagram: "ricecar_", link:"https://www.instagram.com/ricecar_/" },
+  { name: "Maximo", instagram: "minigodesign111", link:"https://www.instagram.com/minigodesign111/" }
 ];
 
 export default function Home() {
@@ -541,96 +541,96 @@ export default function Home() {
               <div className='flex justify-center col-span-2'>
                 <Image
                   src='https://img.logoipsum.com/332.svg'
-                  height='300'
-                  width='200'
+                  height='200'
+                  width='100'
                   alt='GFG logo served from external URL'
                 />
               </div>
               <div className='flex justify-center col-span-2'>
                 <Image
                   src='https://img.logoipsum.com/332.svg'
-                  height='300'
-                  width='200'
+                  height='200'
+                  width='100'
                   alt='GFG logo served from external URL'
                 />
               </div>
               <div className='flex justify-center col-span-2'>
                 <Image
                   src='https://img.logoipsum.com/332.svg'
-                  height='300'
-                  width='200'
+                  height='200'
+                  width='100'
                   alt='GFG logo served from external URL'
                 />
               </div>
               <div className='flex justify-center col-span-2'>
                 <Image
                   src='https://img.logoipsum.com/332.svg'
-                  height='300'
-                  width='200'
+                  height='200'
+                  width='100'
                   alt='GFG logo served from external URL'
                 />
               </div>
               <div className='flex justify-center col-span-2'>
                 <Image
                   src='https://img.logoipsum.com/332.svg'
-                  height='300'
-                  width='200'
+                  height='200'
+                  width='100'
                   alt='GFG logo served from external URL'
                 />
               </div>
               <div className='flex justify-center col-span-2'>
                 <Image
                   src='https://img.logoipsum.com/332.svg'
-                  height='300'
-                  width='200'
+                  height='200'
+                  width='100'
                   alt='GFG logo served from external URL'
                 />
               </div>
               <div className='flex justify-center col-span-2'>
                 <Image
                   src='https://img.logoipsum.com/332.svg'
-                  height='300'
-                  width='200'
+                  height='200'
+                  width='100'
                   alt='GFG logo served from external URL'
                 />
               </div>
               <div className='flex justify-center col-span-2'>
                 <Image
                   src='https://img.logoipsum.com/332.svg'
-                  height='300'
-                  width='200'
+                  height='200'
+                  width='100'
                   alt='GFG logo served from external URL'
                 />
               </div>
               <div className='flex justify-center col-span-2'>
                 <Image
                   src='https://img.logoipsum.com/332.svg'
-                  height='300'
-                  width='200'
+                  height='200'
+                  width='100'
                   alt='GFG logo served from external URL'
                 />
               </div>
               <div className='flex justify-center col-span-2'>
                 <Image
                   src='https://img.logoipsum.com/332.svg'
-                  height='300'
-                  width='200'
+                  height='200'
+                  width='100'
                   alt='GFG logo served from external URL'
                 />
               </div>
               <div className='flex justify-center col-span-2'>
                 <Image
                   src='https://img.logoipsum.com/332.svg'
-                  height='300'
-                  width='200'
+                  height='200'
+                  width='100'
                   alt='GFG logo served from external URL'
                 />
               </div>
               <div className='flex justify-center col-span-2'>
                 <Image
                   src='https://img.logoipsum.com/332.svg'
-                  height='300'
-                  width='200'
+                  height='200'
+                  width='100'
                   alt='GFG logo served from external URL'
                 />
               </div>
@@ -673,7 +673,7 @@ export default function Home() {
           <div className="flex justify-center">
             <div className="flex flex-wrap gap-2 justify-center w-[50%]">
                 {users.map((donator,index) => (
-                  <IndividualCard key={index} name={donator.name}  instagram={donator.instagram}/>
+                  <IndividualCard key={index} name={donator.name} instagram={donator.instagram} link={donator.link}/>
                 ))}
             </div>
           </div>
