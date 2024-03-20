@@ -25,21 +25,50 @@ type MyComponentProps = {
 };
 
 export const Participant: React.FC<MyComponentProps> = ({
-  type = 'vendors',
-  title = 'La belle tonkinoise',
-  desc = 'La Belle Tonkinoise est un stand de street food vietnamien qui brille lors des festivals avec son offre de plats traditionnels revisités.',
-  tags = ['Poutine', 'Bánh Mì', 'Concombre', 'Papaye', 'Marshmallow '],
+  type,
+  title,
+  desc,
+  tags,
 }) => {
+
+  let colors: string;
+  let colorIcons: string;
+  if (type === 'performer'){
+    colors ="text-[#1F1F20] border-[#1F1F20]"
+    colorIcons = "#1F1F20"
+  } else if (type === 'food vendor'){
+    colors ="text-[#982900] border-[#982900]"
+    colorIcons = "#982900"
+  } else if (type === 'merchant'){
+    colors ="text-[#13450E] border-[#13450E]"
+    colorIcons = "#13450E"
+  } else if (type === 'association'){
+    colors ="text-[#091D98] border-[#091D98]"
+    colorIcons = "#091D98"
+  }
+
+  console.log(type)
   return (
-    <Card className={`border-2  border-${type}`}>
+    <Card className={`border-2  ${colors} `}>
       <div className='grid grid-cols-12 '>
         <div className='col-span-7'>
-          <CardHeader className='p-4 h-16'>
-            <CardTitle className={`text-${type} italic`}>{title}</CardTitle>
+          <CardHeader className='p-4 max-h-16'>
+            <CardTitle
+              className={`italic ${
+                title.split(' ').length > 4 ? `text-md` : ``
+              }`}
+            >
+              {title}
+            </CardTitle>
           </CardHeader>
           <CardContent className='p-4'>
             <CardDescription className={`text-sm text-${type} h-24`}>
-            {desc.length > 120 ? `${desc.substring(0, desc.substring(0, 120).lastIndexOf(' '))}...SEE MORE` : desc}
+              {desc.length > 120
+                ? `${desc.substring(
+                    0,
+                    desc.substring(0, 120).lastIndexOf(' ')
+                  )}...SEE MORE`
+                : desc}
             </CardDescription>
           </CardContent>
           <CardContent className='p-4 pb-0'>
@@ -77,10 +106,10 @@ export const Participant: React.FC<MyComponentProps> = ({
         </div>
       </div>
       <CardFooter className='flex flex-wrap gap-2 p-4 h-22'>
-        {tags.map((tag, index) => (
+        {tags?.map((tag, index) => (
           <div
             key={index}
-            className={`border-${type} border-2 px-2 rounded-xl text-${type}`}
+            className={`${colors} border-2 px-2 rounded-xl`}
           >
             {tag}
           </div>
