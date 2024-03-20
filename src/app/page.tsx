@@ -624,7 +624,7 @@ export default function Home() {
         </div>
 
         {donators.map((donator) => (
-          <h1>{donator}</h1>
+          <h1 key={donator}>{donator}</h1>
         ))}
         <div className='space-y-8'>
           <h1 className='text-2xl font-bold text-center'>CONTRIBUTORS</h1>
@@ -634,7 +634,7 @@ export default function Home() {
           </p>
         </div>
         {donators.map((donator) => (
-          <h1>{donator}</h1>
+          <h1 key={donator}>{donator}</h1>
         ))}
       </section>
     </div>
