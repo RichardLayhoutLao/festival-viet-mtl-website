@@ -10,12 +10,12 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
-import Facebook from '@/svg/facebook';
-import Instagram from '@/svg/instagram';
-import Twitter_X from '@/svg/twitter-x';
-import Tiktok from '@/svg/titok';
-import Web from '@/svg/web';
-import Youtube from '@/svg/youtube';
+import Facebook from '@/components/svg/socials/facebook';
+import Instagram from '@/components/svg/socials/instagram';
+import Twitter_X from '@/components/svg/socials/twitter-x';
+import Tiktok from '@/components/svg/socials/titok';
+import Web from '@/components/svg/socials/web';
+import Youtube from '@/components/svg/socials/youtube';
 
 type MyComponentProps = {
   type?: string;

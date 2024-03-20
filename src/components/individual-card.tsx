@@ -1,5 +1,5 @@
 import React from 'react';
-import Instagram from '@/svg/instagram'
+import Instagram from '@/components/svg/socials/instagram'
 type IndividualCardProps = {
   name: string;
   instagram?: string;

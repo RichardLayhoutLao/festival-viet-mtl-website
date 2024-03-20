@@ -14,7 +14,12 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu';
-
+import Restaurant from '@/svg/restaurant';
+import Performer from '@/svg/performer';
+import Merchant from '@/svg/merchant';
+import Association_Organisme from '@/svg/association-organisme';
+import Volunteer from '@/svg/volunteer';
+import Sponsor from '@/svg/sponsor';
 
 const components: { title: string; href: string; description: string }[] = [
   {
@@ -137,8 +142,18 @@ const ListItem = React.forwardRef<
           )}
           {...props}
         >
-          <div className='text-sm font-medium leading-none'>{title}</div>
-          <p className='line-clamp-2 text-sm leading-snug text-muted-foreground'>
+          <div className='text-sm font-medium '>        
+            <div className='flex space-x-2'>
+                {title === 'Food Vendors' && <Restaurant navbar />}
+                {title === 'Merchants' && <Merchant navbar />}
+                {title === 'Volunteers' && <Volunteer navbar />}
+                {title === 'Sponsors' && <Sponsor navbar />}
+                {title === 'Performers' && <Performer navbar />}
+                {title === 'Associations et organismes' && <Association_Organisme navbar/>}
+              <div>{title}</div>
+            </div>
+          </div>
+          <p className='text-sm leading-snug text-muted-foreground'>
             {children}
           </p>
         </a>
