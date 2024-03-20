@@ -31,7 +31,7 @@ export const Participant: React.FC<MyComponentProps> = ({
   tags,
 }) => {
 
-  let colors: string;
+  let colors: string | undefined;
   let colorIcons: string;
   if (type === 'performer'){
     colors ="text-[#1F1F20] border-[#1F1F20]"
