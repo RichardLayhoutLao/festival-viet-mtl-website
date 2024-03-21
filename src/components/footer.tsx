@@ -21,14 +21,12 @@ const routes = [
 export default function Footer() {
   return (
     <footer className='mt-auto items-center justify-between h-auto border-t border-white/10 px-3 sm:px-9 bg-[#FFB623] font-semibold text-base text-[#982900]'>
-      {/* <small className="text-xs">
-        &copy; 2050 ByteGrad. All rights reserved.
-      </small> */}
-
       <div className="grid grid-cols-3 py-12">
         <div className="flex justify-center">
             <div className="flex flex-col justify-between">
+            <Link href="/">
                 <FestivalVietMtl></FestivalVietMtl>
+            </Link>
                 <div className="text-sm">
                     <div>Festival Viet Montréal 2024</div>
                     <div>© All rights reserved</div>
@@ -39,12 +37,12 @@ export default function Footer() {
             <div className="space-y-4">
                 <div className="text-2xl">LIENS UTILES</div>
                 <div className="text-sm space-y-2">
-                    <div><Link href="/about" legacyBehavior passHref>ABOUT</Link></div>
-                    <div><Link href="/faq" legacyBehavior passHref>FAQ</Link></div>
-                    <div><Link href="/participant" legacyBehavior passHref>PARTICIPANT</Link></div>
-                    <div><Link href="/apply" legacyBehavior passHref>APPLY</Link></div>
-                    <div><Link href="/2023" legacyBehavior passHref>ÉDITION 2023</Link></div>
-                    <div><Link href="/contact" legacyBehavior passHref>CONTACT</Link></div>
+                    <div><Link href="/about">ABOUT</Link></div>
+                    <div><Link href="/faq">FAQ</Link></div>
+                    <div><Link href="/participant">PARTICIPANT</Link></div>
+                    <div><Link href="/apply">APPLY</Link></div>
+                    <div><Link href="/2023">ÉDITION 2023</Link></div>
+                    <div><Link href="/contact">CONTACT</Link></div>
                 </div>
             </div>
         </div>
@@ -52,13 +50,10 @@ export default function Footer() {
             <div className="space-y-4">
                 <div className="text-2xl">SOCIALS</div>
                 <div className="flex space-x-4">
-                    <Facebook footer></Facebook>
-                    <Instagram footer></Instagram>
-                    <Youtube footer></Youtube>
-                    <Mail footer></Mail>
-                    {/* 
-                    <Youtube></Youtube>
-                    <Facebook></Facebook> */}
+                <Link href="https://www.facebook.com/p/Festival-Viet-Montr%C3%A9al-100027689933508/"><Facebook footer></Facebook></Link>
+                <Link href="https://www.instagram.com/festivalvietmtl/"><Instagram footer></Instagram></Link>
+                <Link href="https://www.youtube.com/results?search_query=festival+viet+montreal"><Youtube footer></Youtube></Link>
+                <Link href="mailto:FestivalVietMtl@gmail.com"><Mail footer></Mail></Link>
                 </div>
             </div>
         </div>
