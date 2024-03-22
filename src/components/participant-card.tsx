@@ -74,7 +74,7 @@ export const Participant: React.FC<MyComponentProps> = ({
           <CardContent className='p-4 pb-0'>
             <div className='grid grid-cols-6'>
               <Link href='/'>
-                <Facebook type='merchant'></Facebook>
+                <Facebook></Facebook>
               </Link>
               <Link href='/'>
                 <Instagram></Instagram>

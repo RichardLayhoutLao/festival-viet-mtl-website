@@ -79,7 +79,7 @@ export function Header() {
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href='/faq' legacyBehavior passHref>
+          <Link href='/Participants' legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Participants
             </NavigationMenuLink>

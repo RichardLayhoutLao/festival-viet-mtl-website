@@ -2,7 +2,7 @@ import React from 'react'
 
 const FAQ = () => {
   return (
-    <div>
+    <div className="bg-[#EDEBDE] h-screen">
         <div>Frequently asked questions</div>
         <div>Questions you might ask about Festival Viet Montréal</div>
         <div>What is Lorem Ipsum?</div>
