@@ -4,7 +4,8 @@ import * as React from 'react';
 import Link from 'next/link';
 
 import { cn } from '@/lib/utils';
-
+import Image from 'next/image';
+import logo from '../../public/logo.svg';
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -62,6 +63,18 @@ const components: { title: string; href: string; description: string }[] = [
 
 export function Header() {
   return (
+    <div className='flex items-center justify-between py-6 '>
+    <Link href='/'>
+      <Image
+        priority
+        src={logo}
+        height={3103}
+        width={200}
+        alt='Follow us on Twitter'
+      />
+    </Link>
+    {/* <Header></Header> */}
+
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
@@ -124,6 +137,7 @@ export function Header() {
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
+    </div>
   );
 }
 

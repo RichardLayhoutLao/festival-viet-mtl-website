@@ -1,7 +1,5 @@
 import { Header } from '../components/header';
-import Image from 'next/image';
-import Link from 'next/link';
-import logo from '../../public/logo.svg';
+
 import { Participant } from '../components/participant-card';
 import Restaurant from '@/components/svg/participants/restaurant';
 import Performer from '@/components/svg/participants/performer';
@@ -14,18 +12,6 @@ export default function Home() {
   return (
     <div>
       <div className='container mx-auto bg-red-900 h-screen py-6'>
-        <div className='flex items-center justify-between py-6 '>
-          <Link href='/'>
-            <Image
-              priority
-              src={logo}
-              height={3103}
-              width={200}
-              alt='Follow us on Twitter'
-            />
-          </Link>
-          <Header></Header>
-        </div>
       </div>
       <section className='container mx-auto py-48 bg-[#FFB623] text-[#982900] space-y-8'>
         <div className='flex justify-center space-x-4'>
