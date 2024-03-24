@@ -21,7 +21,7 @@ const IndividualCard = ({ name, instagram, link }: IndividualCardProps) => {
     </div>
   );
 
-  return link ? <Link className='hover:bg-gray-800 hover:bg-opacity-10 rounded-xl transition duration-100 ease-in-out' href={link}>{content}</Link> : content;
+  return link ? <Link className='hover:bg-gray-800 hover:bg-opacity-10 transition duration-100 ease-in-out rounded-xl ' href={link}>{content}</Link> : content;
 };
 
 export default IndividualCard;
