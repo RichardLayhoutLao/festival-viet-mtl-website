@@ -1,88 +1,122 @@
 export const foodVendors = [
     {
-      type: 'food vendor',
-      title: 'Saigon Saveurs',
-      desc: 'Saigon Saveurs offre une immersion dans la cuisine de rue de Saigon, mettant en vedette des saveurs authentiques et vibrantes.',
-      tags: ['Phở', 'Bánh', 'Nems', 'Salade', 'Café'],
-    },
-    {
-      type: 'food vendor',
-      title: 'Hanoi Harmonie',
-      desc: 'Hanoi Harmonie célèbre la richesse culinaire du Nord du Vietnam, avec des recettes traditionnelles et des ingrédients frais.',
-      tags: ['Phở', 'Bún', 'Rouleaux', 'Pâtisseries', 'Thé'],
-    },
-    {
-      type: 'food vendor',
-      title: 'Lotus Bleu',
-      desc: 'Lotus Bleu propose une expérience gastronomique élégante, fusionnant les saveurs vietnamiennes avec une présentation artistique.',
-      tags: ['Crêpes', 'Bún', 'Mangue', 'Taro', 'Tamarin'],
-    },
-    {
-      type: 'food vendor',
-      title: 'Mekong Mystique',
-      desc: "Mekong Mystique invite à un voyage culinaire le long du Mékong, explorant des plats régionaux pleins de saveurs et d'histoire.",
-      tags: ['Curry', 'Riz', 'Bánh', 'Lotus', 'Jus'],
-    },
-    {
-      type: 'food vendor',
-      title: 'Impérial de Hue',
-      desc: "Impérial de Hue met en avant la cuisine raffinée de l'ancienne capitale impériale, avec des plats sophistiqués et pleins de saveurs.",
-      tags: ['Bún', 'Dumplings', 'Poulet', 'Riz', 'Gâteau'],
-    },
-    {
-      type: 'food vendor',
-      title: 'Da Nang Delices',
-      desc: 'Da Nang Delices offre une palette de saveurs de la côte centrale, mettant en vedette des fruits de mer frais et des épices locales.',
-      tags: ['Quảng', 'Crevettes', 'Gelée', 'Salade', 'Pain'],
-    },
-    {
-      type: 'food vendor',
-      title: 'Bambou Vert',
-      desc: 'Bambou Vert propose une cuisine vietnamienne contemporaine, axée sur des ingrédients biologiques et des associations innovantes.',
-      tags: ['Tofu', 'Phở', 'Quinoa', 'Detox', 'Dessert'],
-    },
-    {
-      type: 'food vendor',
-      title: 'Nénuphar Saigon',
-      desc: 'Nénuphar Saigon est une célébration des saveurs vibrantes de Saigon, avec un menu créatif et coloré.',
-      tags: ['Bánh', 'Brochettes', 'Riz', 'Crème', 'Limonade'],
-    },
-    {
-      type: 'food vendor',
-      title: "Étoile d'Annam",
-      desc: "Étoile d'Annam offre une immersion dans l'élégance de la cuisine vietnamienne, avec un accent sur les plats signature et les ingrédients de saison.",
-      tags: ['Boeuf', 'Rouleaux', 'Gâteaux', 'Poulet', 'Sorbet'],
-    },
-    {
-      type: 'food vendor',
-      title: "Perle d'Orient",
-      desc: "Perle d'Orient met en scène une cuisine vietnamienne authentique dans un cadre moderne, avec un menu qui voyage à travers les régions du Vietnam.",
-      tags: ['Fruits', 'Phở', 'Bánh'],
-    },
-    {
-      type: 'food vendor',
-      title: 'Dragon de Jade',
-      desc: 'Dragon de Jade présente une cuisine vietnamienne fusion, où les traditions culinaires sont revisitées avec audace.',
-      tags: ['Canard', 'Raviolis', 'Phở', 'Tapioca', 'Cocktail'],
-    },
-    {
-      type: 'food vendor',
-      title: 'Bamboo Zen',
-      desc: "Bamboo Zen propose des plats vietnamiens dans un cadre relaxant et méditatif, mettant l'accent sur l'équilibre des saveurs.",
-      tags: ['Rouleaux', 'Soupe', 'Salade', 'Thé', 'Gâteau'],
-    },
-    {
-      type: 'food vendor',
-      title: 'Saigon Bistro',
-      desc: 'Saigon Bistro offre une expérience culinaire intime, avec une attention particulière portée aux plats de Saigon.',
-      tags: ['Crevettes', 'Baguette', 'Phở', 'Crème', 'Smoothie'],
-    },
-    {
-      type: 'food vendor',
-      title: 'Hanoi Heureux',
-      desc: 'Hanoi Heureux est une célébration de la cuisine de Hanoi, mettant en lumière les plats emblématiques de la ville.',
-      tags: ['Poisson', 'Nems', 'Bún', 'Café', 'Dessert'],
-    },
+      "type": 'food vendor',
+      "title": 'La Belle Tonki',
+      "desc": 'La Belle Tonkinoise est un stand de street food vietnamien qui brille lors des festivals avec son offre de plats traditionnels revisités. Mettant en vedette des incontournables comme le Banh Mi innovant et le Pho aromatique, chaque mets est préparé avec des ingrédients frais pour garantir lauthenticité des saveurs. Lambiance est directement inspirée des rues animées du Vietnam, avec une décoration colorée et des lanternes multicolores, invitant les festivaliers à une véritable escapade culinaire. Ce restaurant éphémère se démarque par son engagement à offrir une expérience vietnamienne authentique et mémorable. Au menu, La Belle Tonkinoise présente une variété de plats traditionnels revisités avec une touche moderne, utilisant des ingrédients frais et locaux.',
+      "tags": ['Phở', 'Bánh', 'Nems', 'Salade', 'Café'],
+      "slug": 'la-belle-tonki',
+      "socials": {
+          "facebook": "www.facebook.com",
+          "instagram": "www.instagram.com",
+          "x": "www.twitter.com",
+          "snapchat": "www.snapchat.com",
+          "youtube": "www.youtube.com"
+      },
+      "coordinates": {
+          "website": "www.labellentonki.com",
+          "phonenumber": "+123456789",
+          "email": "contact@labellentonki.com",
+          "address": "11335 Rue Beaubien E, H2G 1K7"
+      }
+  },
+  {
+    "type": 'food vendor',
+    "title": 'Saigon Saveurs',
+    "desc": 'Saigon Saveurs offre une immersion dans la cuisine de rue de Saigon, mettant en vedette des saveurs authentiques et vibrantes.',
+    "tags": ['Phở', 'Bánh', 'Nems', 'Salade', 'Café'],
+    "slug": "saigon-saveurs",
+  },
+  {
+    "type": 'food vendor',
+    "title": 'Hanoi Harmonie',
+    "desc": 'Hanoi Harmonie célèbre la richesse culinaire du Nord du Vietnam, avec des recettes traditionnelles et des ingrédients frais.',
+    "tags": ['Phở', 'Bún', 'Rouleaux', 'Pâtisseries', 'Thé'],
+    "slug": "hanoi-harmonie"
+  },
+  {
+    "type": 'food vendor',
+    "title": 'Lotus Bleu',
+    "desc": 'Lotus Bleu propose une expérience gastronomique élégante, fusionnant les saveurs vietnamiennes avec une présentation artistique.',
+    "tags": ['Crêpes', 'Bún', 'Mangue', 'Taro', 'Tamarin'],
+    "slug": "lotus-bleu"
+  },
+  {
+    "type": 'food vendor',
+    "title": 'Mekong Mystique',
+    "desc": "Mekong Mystique invite à un voyage culinaire le long du Mékong, explorant des plats régionaux pleins de saveurs et d'histoire.",
+    "tags": ['Curry', 'Riz', 'Bánh', 'Lotus', 'Jus'],
+    "slug": "mekong-mystique"
+  },
+  {
+    "type": 'food vendor',
+    "title": 'Impérial de Hue',
+    "desc": "Impérial de Hue met en avant la cuisine raffinée de l'ancienne capitale impériale, avec des plats sophistiqués et pleins de saveurs.",
+    "tags": ['Bún', 'Dumplings', 'Poulet', 'Riz', 'Gâteau'],
+    "slug": "imperial-de-hue"
+  },
+  {
+    "type": 'food vendor',
+    "title": 'Da Nang Delices',
+    "desc": 'Da Nang Delices offre une palette de saveurs de la côte centrale, mettant en vedette des fruits de mer frais et des épices locales.',
+    "tags": ['Quảng', 'Crevettes', 'Gelée', 'Salade', 'Pain'],
+    "slug": "da-nang-delices"
+  },
+  {
+    "type": 'food vendor',
+    "title": 'Bambou Vert',
+    "desc": 'Bambou Vert propose une cuisine vietnamienne contemporaine, axée sur des ingrédients biologiques et des associations innovantes.',
+    "tags": ['Tofu', 'Phở', 'Quinoa', 'Detox', 'Dessert'],
+    "slug": "bambou-vert"
+  },
+  {
+    "type": 'food vendor',
+    "title": 'Nénuphar Saigon',
+    "desc": 'Nénuphar Saigon est une célébration des saveurs vibrantes de Saigon, avec un menu créatif et coloré.',
+    "tags": ['Bánh', 'Brochettes', 'Riz', 'Crème', 'Limonade'],
+    "slug": "nenuphar-saigon"
+  },
+  {
+    "type": 'food vendor',
+    "title": "Étoile d'Annam",
+    "desc": "Étoile d'Annam offre une immersion dans l'élégance de la cuisine vietnamienne, avec un accent sur les plats signature et les ingrédients de saison.",
+    "tags": ['Boeuf', 'Rouleaux', 'Gâteaux', 'Poulet', 'Sorbet'],
+    "slug": "etoile-dannam"
+  },
+  {
+    "type": 'food vendor',
+    "title": "Perle d'Orient",
+    "desc": "Perle d'Orient met en scène une cuisine vietnamienne authentique dans un cadre moderne, avec un menu qui voyage à travers les régions du Vietnam.",
+    "tags": ['Fruits', 'Phở', 'Bánh'],
+    "slug": "perle-dorient"
+  },
+  {
+    "type": 'food vendor',
+    "title": 'Dragon de Jade',
+    "desc": 'Dragon de Jade présente une cuisine vietnamienne fusion, où les traditions culinaires sont revisitées avec audace.',
+    "tags": ['Canard', 'Raviolis', 'Phở', 'Tapioca', 'Cocktail'],
+    "slug": "dragon-de-jade"
+  },
+  {
+    "type": 'food vendor',
+    "title": 'Bamboo Zen',
+    "desc": "Bamboo Zen propose des plats vietnamiens dans un cadre relaxant et méditatif, mettant l'accent sur l'équilibre des saveurs.",
+    "tags": ['Rouleaux', 'Soupe', 'Salade', 'Thé', 'Gâteau'],
+    "slug": "bamboo-zen"
+  },
+  {
+    "type": 'food vendor',
+    "title": 'Saigon Bistro',
+    "desc": 'Saigon Bistro offre une expérience culinaire intime, avec une attention particulière portée aux plats de Saigon.',
+    "tags": ['Crevettes', 'Baguette', 'Phở', 'Crème', 'Smoothie'],
+    "slug": "saigon-bistro"
+  },
+  {
+    "type": 'food vendor',
+    "title": 'Hanoi Heureux',
+    "desc": 'Hanoi Heureux est une célébration de la cuisine de Hanoi, mettant en lumière les plats emblématiques de la ville.',
+    "tags": ['Poisson', 'Nems', 'Bún', 'Café', 'Dessert'],
+    "slug": "hanoi-heureux"
+  }
   ];
   
 export const performers = [

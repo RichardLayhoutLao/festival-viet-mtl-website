@@ -1,5 +1,5 @@
 import { Header } from '../components/header';
-
+import Image from 'next/image';
 import { Participant } from '../components/participant-card';
 import Restaurant from '@/components/svg/participants/restaurant';
 import Performer from '@/components/svg/participants/performer';
@@ -22,7 +22,7 @@ export default function Home() {
           Savourez l'authenticité de la cuisine vietnamienne à travers notre
           sélection de restaurants participants.
         </div>
-        <div className='grid grid-cols-3 gap-4'>
+        {/* <div className='grid grid-cols-3 gap-4'>
           {foodVendors.map((vendor, index) => (
             <Participant
               key={index}
@@ -32,9 +32,9 @@ export default function Home() {
               type={vendor.type}
             ></Participant>
           ))}
-        </div>
+        </div> */}
       </section>
-      {/* <section className='container mx-auto py-48 bg-[#1F1F20] text-white space-y-8'>
+      <section className='container mx-auto py-48 bg-[#1F1F20] text-white space-y-8'>
         <div className='flex justify-center space-x-4'>
           <Performer></Performer>
           <h1 className='text-3xl font-bold'>PERFORMERS</h1>
@@ -43,7 +43,7 @@ export default function Home() {
           Partagez l'énergie créative et l'expression artistique du Vietnam lors
           de nos spectacles uniques et mémorables.
         </div>
-        <div className='grid grid-cols-3 gap-4'>
+        {/* <div className='grid grid-cols-3 gap-4'>
           {performers.map((vendor, index) => (
             <Participant
               key={index}
@@ -53,7 +53,7 @@ export default function Home() {
               type={vendor.type}
             ></Participant>
           ))}
-        </div>
+        </div> */}
       </section>
 
       <section className='container mx-auto py-48 bg-[#EDEBDE] text-[#13450E] space-y-8'>
@@ -65,7 +65,7 @@ export default function Home() {
           Bénéficiez de la finesse et de l'expertise vietnamiennes chez nos
           marchands sélectionnés.
         </div>
-        <div className='grid grid-cols-3 gap-4'>
+        {/* <div className='grid grid-cols-3 gap-4'>
           {merchants.map((merchant, index) => (
             <Participant
               key={index}
@@ -75,7 +75,7 @@ export default function Home() {
               type={merchant.type}
             ></Participant>
           ))}
-        </div>
+        </div> */}
       </section>
 
       <section className='container mx-auto py-48 bg-[#EDEBDE] text-[#091D98] space-y-8'>
@@ -87,7 +87,7 @@ export default function Home() {
           Savourez l'authenticité de la cuisine vietnamienne à travers notre
           sélection de restaurants participants
         </div>
-        <div className='grid grid-cols-3 gap-4'>
+        {/* <div className='grid grid-cols-3 gap-4'>
           {association_organisme.map((merchant, index) => (
             <Participant
               key={index}
@@ -97,7 +97,7 @@ export default function Home() {
               type={merchant.type}
             ></Participant>
           ))}
-        </div>
+        </div> */}
       </section>
 
       <section className='container mx-auto py-48 bg-[#EDEBDE] text-[#1F1F20] space-y-24'>
@@ -265,7 +265,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* <section className='container mx-auto py-48 bg-[#EDEBDE] space-y-16'>
 

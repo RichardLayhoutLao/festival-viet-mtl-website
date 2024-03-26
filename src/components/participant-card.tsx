@@ -49,7 +49,7 @@ export const Participant: React.FC<MyComponentProps> = ({
 
   console.log(type)
   return (
-    <Card className={`border-2  ${colors} `}>
+    <Card className={`border-2  ${colors} cursor-pointer hover:bg-gray-800 hover:bg-opacity-10 transition duration-100 ease-in-out`}>
       <div className='grid grid-cols-12 '>
         <div className='col-span-7'>
           <CardHeader className='p-4 max-h-16'>
