@@ -12,9 +12,8 @@ const BlogPage = () => {
         <p className="text-3xl">Blog Page</p>
         <div className='grid grid-cols-3 gap-4'>
           {foodVendors.map((vendor, index) => (
-            <Link href={"/participants/la-belle-tonki"} legacyBehavior >
+            <Link key={index} href={"/participants/la-belle-tonki"} legacyBehavior >
                 <Participant
-                  key={index}
                   title={vendor.title}
                   desc={vendor.desc}
                   tags={vendor.tags}
