@@ -4,6 +4,7 @@ interface SvgComponentProps {
   width?: number;
   height?: number;
   footer?: boolean;
+  individual?: boolean;
   color?: string;
 }
 
@@ -11,10 +12,17 @@ const SvgComponent: React.FC<SvgComponentProps> = ({
   width = 28,
   height = 28,
   footer = false,
+  individual = false,
   color = '#BA4920'
 }) => {
 
   if (footer) {
+    width = 45;
+    height = 45;
+    color = '#BA4920';
+  }
+
+  if (individual) {
     width = 45;
     height = 45;
     color = '#BA4920';

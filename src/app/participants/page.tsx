@@ -12,7 +12,7 @@ const BlogPage = () => {
         <p className="text-3xl">Blog Page</p>
         <div className='grid grid-cols-3 gap-4'>
           {foodVendors.map((vendor, index) => (
-            <Link key={index} href={"/participants/la-belle-tonki"} legacyBehavior >
+            <Link key={index} href={`/participants/${vendor.slug}`} legacyBehavior >
                 <Participant
                   title={vendor.title}
                   desc={vendor.desc}

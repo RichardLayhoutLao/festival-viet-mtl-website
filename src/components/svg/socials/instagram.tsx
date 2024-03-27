@@ -5,6 +5,7 @@ interface InstagramProps {
   isBlue?: boolean;
   color?: string;
   footer?: boolean;
+  individual?: boolean;
   width?: number;
   height?: number;
 }
@@ -13,10 +14,17 @@ const Instagram: React.FC<InstagramProps> = ({
   width = 28,
   height = 28,
   footer = false,
+  individual = false,
   color = '#BA4920',
 }) => {
   
   if (footer) {
+    width = 45;
+    height = 45;
+    color = '#BA4920';
+  }
+
+  if (individual) {
     width = 45;
     height = 45;
     color = '#BA4920';

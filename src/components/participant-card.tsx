@@ -36,7 +36,7 @@ export const Participant: React.FC<MyComponentProps> = ({
   if (type === 'performer'){
     colors ="text-[#1F1F20] border-[#1F1F20]"
     colorIcons = "#1F1F20"
-  } else if (type === 'food vendor'){
+  } else if (type === 'Food vendor'){
     colors ="text-[#982900] border-[#982900]"
     colorIcons = "#982900"
   } else if (type === 'merchant'){

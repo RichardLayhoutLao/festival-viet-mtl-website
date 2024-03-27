@@ -1,27 +1,31 @@
 import * as React from 'react';
 
-interface InstagramProps {
-  black?: boolean;
-  isBlue?: boolean;
-  color?: string;
-  footer?: boolean;
+interface SvgComponentProps {
   width?: number;
   height?: number;
+  footer?: boolean;
+  individual?: boolean;
+  color?: string;
 }
 
-const Instagram: React.FC<InstagramProps> = ({
+const SvgComponent: React.FC<SvgComponentProps> = ({
   width = 28,
   height = 28,
   footer = false,
+  individual = false,
   color = '#BA4920',
 }) => {
-  
   if (footer) {
     width = 45;
     height = 45;
     color = '#BA4920';
   }
 
+  if (individual) {
+    width = 45;
+    height = 45;
+    color = '#BA4920';
+  }
   return (
     <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -36,5 +40,4 @@ const Instagram: React.FC<InstagramProps> = ({
   </svg>
   );
 };
-
-export default Instagram;
+export default SvgComponent;
