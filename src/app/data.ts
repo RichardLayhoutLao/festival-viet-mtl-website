@@ -14,10 +14,10 @@ export const foodVendors = [
           "youtube": "www.youtube.com"
       },
       "coordinates": {
-          "website": "www.labellentonki.com",
-          "phonenumber": "+123456789",
+          "website": "www.labelletonki.ca",
+          "phonenumber": "+15143558809",
           "email": "contact@labellentonki.com",
-          "address": "11335 Rue Beaubien E, H2G 1K7"
+          "address": "11335 Rue Beaubien E"
       }
   },
   {

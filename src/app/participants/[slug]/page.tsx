@@ -18,6 +18,9 @@ import Twitter_X from '@/components/svg/socials/twitter-x';
 import Youtube from '@/components/svg/socials/youtube';
 import Tiktok from '@/components/svg/socials/tiktok';
 import Web from '@/components/svg/socials/web';
+import Phone from '@/components/svg/socials/phone';
+import Mail from '@/components/svg/socials/mail';
+import Map from '@/components/svg/socials/map';
 
 import Restaurant from '@/components/svg/participants/restaurant';
 import Performer from '@/components/svg/participants/performer';
@@ -25,6 +28,7 @@ import Merchant from '@/components/svg/participants/merchant';
 import Association_Organisme from '@/components/svg/participants/association-organisme';
 import Volunteer from '@/components/svg/participants/volunteer';
 import Sponsor from '@/components/svg/participants/sponsor';
+import Link from 'next/link';
 
 const VendorPage = () => {
   const pathname = usePathname();
@@ -88,8 +92,7 @@ const VendorPage = () => {
       </div>
       <div>
         <div className='grid grid-cols-12 pt-16'>
-          <div className='col-span-8 p-6 text-lg space-y-6'>
-            <p className='text-4xl font-medium'>Description</p>
+          <div className='col-span-8 p-6 text-lg '>
             <p>{vendor.desc}</p>
           </div>
           <div className='col-span-4 p-6 space-y-6 '>
@@ -114,10 +117,12 @@ const VendorPage = () => {
               <Web></Web>
               {vendor.coordinates?.email}
             </Button> */}
+             <Link href={`https://${vendor.coordinates?.website}`} passHref legacyBehavior>
+
             <Button
               variant='outline'
               className='w-full text-xl font-medium border-2 p-8 px-4 rounded-xl border-[#982900]'
-            >
+              >
               <div className="grid grid-cols-12 w-full">
                 <div className="col-span-1">
                   <Web></Web>
@@ -125,39 +130,47 @@ const VendorPage = () => {
                 <div className="col-span-11 flex justify-center">{vendor.coordinates?.website}</div>
               </div>
             </Button>
+              </Link>
+            <Link href={`tel:${vendor.coordinates?.phonenumber}`} legacyBehavior>
+
             <Button
               variant='outline'
               className='w-full text-xl font-medium border-2 p-8 px-4 rounded-xl border-[#982900]'
-            >
+              >
               <div className="grid grid-cols-12 w-full">
                 <div className="col-span-1">
-                  <Web></Web>
+                  <Phone></Phone>
                 </div>
                 <div className="col-span-11 flex justify-center">{vendor.coordinates?.phonenumber}</div>
               </div>
             </Button>
-            <Button
-              variant='outline'
-              className='w-full text-xl font-medium border-2 p-8 px-4 rounded-xl border-[#982900]'
-            >
-              <div className="grid grid-cols-12 w-full">
-                <div className="col-span-1">
-                  <Web></Web>
+            </Link>
+            <Link href={`mailto:${vendor.coordinates?.email}`} legacyBehavior>
+              <Button
+                variant='outline'
+                className='w-full text-xl font-medium border-2 p-8 px-4 rounded-xl border-[#982900]'
+                >
+                <div className="grid grid-cols-12 w-full">
+                  <div className="col-span-1">
+                    <Mail></Mail>
+                  </div>
+                  <div className="col-span-11 flex justify-center">{vendor.coordinates?.email}</div>
                 </div>
-                <div className="col-span-11 flex justify-center">{vendor.coordinates?.email}</div>
-              </div>
-            </Button>
-            <Button
-              variant='outline'
-              className='w-full text-xl font-medium border-2 p-8 px-4 rounded-xl border-[#982900]'
-            >
-              <div className="grid grid-cols-12 w-full">
-                <div className="col-span-1">
-                  <Web></Web>
+              </Button>
+            </Link>
+            <Link href={`https://www.google.com/maps/search/?api=1&query=${vendor.coordinates?.address}`} legacyBehavior>
+              <Button
+                variant='outline'
+                className='w-full text-xl font-medium border-2 p-8 px-4 rounded-xl border-[#982900]'
+                >
+                <div className="grid grid-cols-12 w-full">
+                  <div className="col-span-1">
+                    <Map></Map>
+                  </div>
+                  <div className="col-span-11 flex justify-center">{vendor.coordinates?.address}</div>
                 </div>
-                <div className="col-span-11 flex justify-center">{vendor.coordinates?.address}</div>
-              </div>
-            </Button>
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
