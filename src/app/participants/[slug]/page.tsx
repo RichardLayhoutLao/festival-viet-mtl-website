@@ -91,7 +91,7 @@ const VendorPage = () => {
         </div>
       </div>
       <div>
-        <div className='grid grid-cols-12 pt-16'>
+        <div className='grid grid-cols-12 pt-12'>
           <div className='col-span-8 p-6 text-lg '>
             <p>{vendor.desc}</p>
           </div>

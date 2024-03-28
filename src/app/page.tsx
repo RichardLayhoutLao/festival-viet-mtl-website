@@ -12,6 +12,8 @@ export default function Home() {
   return (
     <div>
       <div className='container mx-auto bg-red-900 h-screen py-6'>
+      </div>      
+      <div id="about" className='container mx-auto bg-blue-900 h-screen py-6'>
       </div>
       <section className='container mx-auto py-48 bg-[#FFB623] text-[#982900] space-y-8'>
         <div className='flex justify-center space-x-4'>
@@ -100,7 +102,7 @@ export default function Home() {
         </div> */}
       </section>
 
-      <section className='container mx-auto py-48 bg-[#EDEBDE] text-[#1F1F20] space-y-24'>
+      <section  className='container mx-auto py-48 bg-[#EDEBDE] text-[#1F1F20] space-y-24'>
         <div className='space-y-8'>
           <h1 className='text-3xl font-bold text-center'>NOS PARTENAIRES</h1>
           <div>

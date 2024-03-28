@@ -1,7 +1,9 @@
 import { AccordionDemo } from '@/components/faq-accordion'
 import Facebook from '@/components/svg/socials/facebook'
 import Instagram from '@/components/svg/socials/instagram'
+import Mail from '@/components/svg/socials/mail'
 import React from 'react'
+import Link from 'next/link';
 
 const FAQ = () => {
   return (
@@ -15,11 +17,16 @@ const FAQ = () => {
             </div>
           </div>
           <div className="flex justify-center">
-            <div className="grid grid-cols-2 gap-4 w-[75%]">
-              <div className="border-8 border-[#982900] rounded-xl p-16 flex justify-center hover:bg-[#982900] hover:bg-opacity-10 transition duration-100 ease-in-out"><Facebook width={150} height={150}></Facebook></div>
-              <div className="border-8 border-[#982900] rounded-xl p-16 flex justify-center  hover:bg-[#982900] hover:bg-opacity-10 transition duration-100 ease-in-out"><Instagram width={150} height={150}></Instagram></div>
-              <div className="border-8 border-[#982900] rounded-xl p-16 flex justify-center  hover:bg-[#982900] hover:bg-opacity-10 transition duration-100 ease-in-out"><Facebook width={150} height={150}></Facebook></div>
-              <div className="border-8 border-[#982900] rounded-xl p-16 flex justify-center  hover:bg-[#982900] hover:bg-opacity-10 transition duration-100 ease-in-out"><Facebook width={150} height={150}></Facebook></div>
+            <div className="grid grid-cols-3 gap-4 w-[75%]">
+              <Link href="https://www.facebook.com/profile.php?id=100027689933508" legacyBehavior>
+                <div className="border-8 border-[#982900] rounded-xl p-16 flex justify-center hover:bg-[#982900] hover:bg-opacity-10 transition duration-100 ease-in-out cursor-pointer"><Facebook width={150} height={150}></Facebook></div>
+              </Link>
+              <Link href="https://www.instagram.com/festivalvietmtl/" legacyBehavior>
+              <div className="border-8 border-[#982900] rounded-xl p-16 flex justify-center  hover:bg-[#982900] hover:bg-opacity-10 transition duration-100 ease-in-out cursor-pointer"><Instagram width={150} height={150}></Instagram></div>
+              </Link>
+              <Link href="mailto:FestivalVietMtl@gmail.com" legacyBehavior>
+              <div className="border-8 border-[#982900] rounded-xl p-16 flex justify-center  hover:bg-[#982900] hover:bg-opacity-10 transition duration-100 ease-in-out cursor-pointer"><Mail width={150} height={150}></Mail></div>
+              </Link>
             </div>
           </div>
         </div>
